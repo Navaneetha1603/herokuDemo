@@ -8,15 +8,15 @@ app.get("/",(req,res)=>{
 app.get("/hello",(req,res)=>{
    res.send("hello")
 })
-app.get("/htmlpage",(req,res)=>{
-    res.sendFile(path.join(__dirname,"public/index.html"));
-})
-app.get("/someaction",(req,res)=>{
-    console.log(req.query);
-    let data=req.query.uname;
-    console.log(data);
-    res.send(`username is ${data}`);
-})
+// app.get("/htmlpage",(req,res)=>{
+//     res.sendFile(path.join(__dirname,"public/index.html"));
+// })
+// app.get("/someaction",(req,res)=>{
+//     console.log(req.query);
+//     let data=req.query.uname;
+//     console.log(data);
+//     res.send(`username is ${data}`);
+// })
 app.get("/getDelete",(request,response)=>
 {
     var obj=[{
